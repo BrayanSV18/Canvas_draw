@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Dibujando con canvas</title>
-    <style type="text/css">
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Dibujo en canvas</h1>
-    <p>
-      ¿Cuántas líneas quieres?
-      <input type="text" id="texto_lineas" />
-      <input type="button" value="A darle!" id="botoncito" />
-    </p>
-    <canvas width="300" height="300" id="dibujito"></canvas>
-    <p>Asi queda tu dibujo</p>
-    <script src="dibujo.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dibujando con canvas</title>
+
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Dibujo en canvas</h1>
+  <p>
+    ¿Cuántas líneas quieres?
+    <input type="text" id="texto_lineas" />
+    <input type="button" value="¡A darle!" id="botoncito" />
+
+  <p>¿Qué lados quieres dibujar? <br><br>
+    <input type="checkbox" id="SI">Superior Izquierdo
+    <input type="checkbox" id="SD">Superior Derecho <br>
+    <input type="checkbox" id="II">Inferior Izquierdo
+    <input type="checkbox" id="ID">Inferior Derecho
+  </p>
+
+  </p>
+  <canvas width="300" height="300" id="dibujito"></canvas>
+  <p>Asi queda tu dibujo</p>
+  <script src="dibujo.js"></script>
+</body>
+
 </html>
